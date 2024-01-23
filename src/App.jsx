@@ -51,7 +51,7 @@ const App = () => {
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
-          <button onClick={addTodo}>Addfafsaf</button>
+          <button onClick={addTodo}>ADD</button>
         </div>
         <div className="todo-list">
           {todos.map((todo) => (
@@ -61,7 +61,7 @@ const App = () => {
       </div>
     </div>
   );
-
+  
 };
 
 export default App;
