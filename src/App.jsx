@@ -7,6 +7,12 @@ function App() {
   return (
     <>
       <h1>This is a To do List React Application</h1>
+      <div className="App">
+        {/* <TodoComponent /> */} This is todo component
+        <div>
+        {/* <Socialcomponent/> */} This is Social components
+        </div>
+      </div>
     </>
   )
 }
