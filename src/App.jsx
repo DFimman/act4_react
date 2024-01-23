@@ -40,7 +40,28 @@ const App = () => {
     );
   };
 
-  
+  return (
+    <div className="app">
+      <h1>To-Do List</h1>
+      <div className="todo-container">
+        <div className="add-todo">
+          <input
+            type="text"
+            placeholder="Add a new task..."
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+          />
+          <button onClick={addTodo}>Addfafsaf</button>
+        </div>
+        <div className="todo-list">
+          {todos.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} onDelete={deleteTodo} onToggle={toggleTodo} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
 };
 
 export default App;
